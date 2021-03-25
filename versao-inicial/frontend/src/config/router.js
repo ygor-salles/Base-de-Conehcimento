@@ -5,6 +5,7 @@ import Home from '@/components/home/Home'
 import AdminPages from '../components/admin/AdminPages'
 import ArticlesByCategory from '@/components/article/ArticleByCategory' 
 import ArticleById from '@/components/article/ArticleById'
+import Auth from '@/components/auth/Auth'
 
 Vue.use(VueRouter)
 
@@ -25,9 +26,14 @@ const routes = [
         component: ArticlesByCategory
     },
     {
-        name: 'articlesById',
+        name: 'articleById',
         path: '/articles/:id',
         component: ArticleById
+    },
+    {
+        name: 'auth',
+        path: '/auth',
+        component: Auth
     }
 ]
 
