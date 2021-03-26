@@ -13,7 +13,7 @@
                 <h2>{{ article.name }}</h2>
                 <p>{{ article.description }}</p>
                 <span class="article-item-author">
-                    <strong>Author: </strong>{{ article.author }}
+                    <strong>Autor: </strong>{{ article.author }}
                 </span>
             </div>
         </router-link>

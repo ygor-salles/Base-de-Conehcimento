@@ -68,8 +68,11 @@ export default {
         text-decoration: none;
     }
 
-    .menu .tree-node.selected > .tree-content,
-    .menu .tree-node .tree-content:hover {
+    .menu .tree-node:not(.selected) > .tree-content:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+ 
+    .menu .tree-node.selected > .tree-content {
         background-color: rgba(255, 255, 255, 0.2);
     }
 
